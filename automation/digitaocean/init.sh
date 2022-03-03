@@ -23,6 +23,7 @@ do
        --size s-1vcpu-1gb \
        --user-data-file userdata.sh \
        --region $REGION \
+       --enable-monitoring \
        --ssh-keys "${KEYS}" \
        "stop-russia-${REGION}-${HASH}"
 done
