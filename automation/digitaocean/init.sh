@@ -21,7 +21,7 @@ do
      doctl compute droplet create \
        --image ubuntu-20-04-x64 \
        --size s-1vcpu-1gb \
-       --user-data-file ./stop-russia/automation/digitaocean/userdata.sh \
+       --user-data-file ~/stop-russia/automation/digitaocean/userdata.sh \
        --region $REGION \
        --enable-monitoring \
        --ssh-keys "${KEYS}" \
